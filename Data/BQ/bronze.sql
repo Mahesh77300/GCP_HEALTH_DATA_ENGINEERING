@@ -1,5 +1,8 @@
 -- These quries creates external tables for bronze dataset in BigQuery using the json files stored in the gcs bucket
 -- Each hospital data is stored in separate tables to maintain data lineage and source identification
+
+
+
 CREATE EXTERNAL TABLE IF NOT EXISTS `dataengineer-471916.bronze_dataset.departments_ha` 
 OPTIONS (
   format = 'JSON',
