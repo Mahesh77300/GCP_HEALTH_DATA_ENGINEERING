@@ -13,7 +13,7 @@ from airflow.providers.google.cloud.operators.dataproc import (
 PROJECT_ID = "dataengineer-471916"
 REGION = "us-east1"
 CLUSTER_NAME = "my-demo-cluster2"
-COMPOSER_BUCKET = "us-central1-demo-instance-a649b781-bucket" ## change this ---
+COMPOSER_BUCKET = "us-central1-health-composer-083b21d6-bucket" # Composer bucket name
 
 GCS_JOB_FILE_1 = f"gs://{COMPOSER_BUCKET}/data/INGESTION/hospitalA_mysqlToLanding.py"
 PYSPARK_JOB_1 = {
